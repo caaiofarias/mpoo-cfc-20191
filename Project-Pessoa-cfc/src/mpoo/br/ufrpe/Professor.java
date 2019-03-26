@@ -1,7 +1,7 @@
 package mpoo.br.ufrpe;
 import java.util.Date;
 
-public class Professor extends Pessoa {
+public class Professor {
 	private Date admissao = new Date();
 
 	public void setAdmissao(Date admissao) {
@@ -10,5 +10,7 @@ public class Professor extends Pessoa {
 	public Date getAdmissao(){
 		return this.admissao;
 	}
-	
+	public void print() {
+		System.out.print("Data de Admissao: "+ admissao);
+	}
 }
